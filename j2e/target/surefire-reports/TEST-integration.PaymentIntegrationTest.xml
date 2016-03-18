@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="integration.PaymentIntegrationTest" time="0.368" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.74-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/user/Documents/Cours/DevOps/DEVOPS-NAJASB/j2e"/>
+    <property name="java.runtime.version" value="1.8.0_74-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.13.0-79-generic"/>
+    <property name="user.home" value="/home/user"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="user"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="fr"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_74"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="integrationBetweenCustomersAndOrders" classname="integration.PaymentIntegrationTest" time="0.368">
+    <error type="fr.unice.polytech.isa.tcf.exceptions.PaymentException:">fr.unice.polytech.isa.tcf.exceptions.PaymentException: null
+	at fr.unice.polytech.isa.tcf.components.CashierBean.payOrder(CashierBean.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:192)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:173)
+	at org.apache.openejb.monitoring.StatsInterceptor.record(StatsInterceptor.java:181)
+	at org.apache.openejb.monitoring.StatsInterceptor.invoke(StatsInterceptor.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:192)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:173)
+	at org.apache.openejb.core.interceptor.InterceptorStack.invoke(InterceptorStack.java:85)
+	at org.apache.openejb.core.stateless.StatelessContainer._invoke(StatelessContainer.java:227)
+	at org.apache.openejb.core.stateless.StatelessContainer.invoke(StatelessContainer.java:194)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler.synchronizedBusinessMethod(EjbObjectProxyHandler.java:308)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler.businessMethod(EjbObjectProxyHandler.java:303)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler._invoke(EjbObjectProxyHandler.java:92)
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.invoke(BaseEjbProxyHandler.java:321)
+	at com.sun.proxy.$Proxy83.payOrder(Unknown Source)
+	at integration.PaymentIntegrationTest.integrationBetweenCustomersAndOrders(PaymentIntegrationTest.java:46)
+</error>
+    <system-err><![CDATA[mars 17, 2016 6:58:44 PM org.apache.tomee.embedded.Container start
+INFOS: Starting TomEE from: /tmp/arquillian-apache-tomee
+mars 17, 2016 6:58:44 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8080"]
+mars 17, 2016 6:58:44 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Starting service Tomcat
+mars 17, 2016 6:58:44 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.63
+mars 17, 2016 6:58:44 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8080"]
+mars 17, 2016 6:58:45 PM org.apache.openejb.util.OptionsLog info
+INFOS: Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+mars 17, 2016 6:58:45 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: ********************************************************************************
+mars 17, 2016 6:58:45 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: OpenEJB http://tomee.apache.org/
+mars 17, 2016 6:58:45 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Startup: Thu Mar 17 18:58:45 CET 2016
+mars 17, 2016 6:58:45 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Copyright 1999-2015 (C) Apache OpenEJB/TomEE Project, All Rights Reserved.
+mars 17, 2016 6:58:45 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Version: 4.7.3
+mars 17, 2016 6:58:45 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Build date: 20151204
+mars 17, 2016 6:58:45 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: Build time: 06:14
+mars 17, 2016 6:58:45 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: ********************************************************************************
+mars 17, 2016 6:58:45 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: openejb.home = /tmp/arquillian-apache-tomee
+mars 17, 2016 6:58:45 PM org.apache.openejb.OpenEJB$Instance <init>
+INFOS: openejb.base = /tmp/arquillian-apache-tomee
+mars 17, 2016 6:58:45 PM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFOS: Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@5afa3c9
+mars 17, 2016 6:58:45 PM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFOS: Succeeded in installing singleton service
+mars 17, 2016 6:58:45 PM org.apache.openejb.config.ConfigurationFactory init
+INFOS: openejb configuration file is '/tmp/arquillian-apache-tomee/conf/openejb.xml'
+mars 17, 2016 6:58:45 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+mars 17, 2016 6:58:45 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+mars 17, 2016 6:58:45 PM org.apache.openejb.util.OptionsLog info
+INFOS: Using 'openejb.system.apps=false'
+mars 17, 2016 6:58:45 PM org.apache.openejb.util.OptionsLog info
+INFOS: Using 'openejb.deployments.classpath=false'
+mars 17, 2016 6:58:45 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating TransactionManager(id=Default Transaction Manager)
+mars 17, 2016 6:58:45 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating SecurityService(id=Tomcat Security Service)
+mars 17, 2016 6:58:45 PM org.apache.openejb.util.OptionsLog info
+INFOS: Using 'openejb.servicemanager.enabled=false'
+mars 17, 2016 6:58:46 PM org.apache.openejb.util.JarExtractor extract
+INFOS: Extracting jar: /tmp/arquillian-tomee-app-working-dir/0/fba2a2ac-ccec-49cc-9146-ddf3da699d9f.war
+mars 17, 2016 6:58:46 PM org.apache.openejb.util.JarExtractor extract
+INFOS: Extracted path: /tmp/arquillian-tomee-app-working-dir/0/fba2a2ac-ccec-49cc-9146-ddf3da699d9f
+mars 17, 2016 6:58:46 PM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFOS: using default host: localhost
+mars 17, 2016 6:58:46 PM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFOS: ------------------------- localhost -> /fba2a2ac-ccec-49cc-9146-ddf3da699d9f
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFOS: Configuring enterprise application: /tmp/arquillian-tomee-app-working-dir/0/fba2a2ac-ccec-49cc-9146-ddf3da699d9f
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb Database: EjbDeployment(deployment-id=Database)
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb CashierBean: EjbDeployment(deployment-id=CashierBean)
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb CustomerRegistryBean: EjbDeployment(deployment-id=CustomerRegistryBean)
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb CatalogueBean: EjbDeployment(deployment-id=CatalogueBean)
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb KitchenBean: EjbDeployment(deployment-id=KitchenBean)
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb cart-stateless: EjbDeployment(deployment-id=cart-stateless)
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.InitEjbDeployments deploy
+INFOS: Auto-deploying ejb cart-stateful: EjbDeployment(deployment-id=cart-stateful)
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.AutoConfig createContainer
+INFOS: Auto-creating a container for bean fba2a2ac-ccec-49cc-9146-ddf3da699d9f.Comp1970073944: Container(type=MANAGED, id=Default Managed Container)
+mars 17, 2016 6:58:46 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating Container(id=Default Managed Container)
+mars 17, 2016 6:58:46 PM org.apache.openejb.core.managed.SimplePassivater init
+INFOS: Using directory /tmp for stateful session passivation
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Default Singleton Container, type=Container, provider-id=Default Singleton Container)
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.AutoConfig createContainer
+INFOS: Auto-creating a container for bean Database: Container(type=SINGLETON, id=Default Singleton Container)
+mars 17, 2016 6:58:46 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating Container(id=Default Singleton Container)
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+mars 17, 2016 6:58:46 PM org.apache.openejb.config.AutoConfig createContainer
+INFOS: Auto-creating a container for bean CashierBean: Container(type=STATELESS, id=Default Stateless Container)
+mars 17, 2016 6:58:46 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating Container(id=Default Stateless Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.config.ConfigurationFactory configureService
+INFOS: Configuring Service(id=Default Stateful Container, type=Container, provider-id=Default Stateful Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.config.AutoConfig createContainer
+INFOS: Auto-creating a container for bean cart-stateful: Container(type=STATEFUL, id=Default Stateful Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFOS: Creating Container(id=Default Stateful Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.core.stateful.SimplePassivater init
+INFOS: Using directory /tmp for stateful session passivation
+mars 17, 2016 6:58:47 PM org.apache.openejb.config.AppInfoBuilder build
+INFOS: Enterprise application "/tmp/arquillian-tomee-app-working-dir/0/fba2a2ac-ccec-49cc-9146-ddf3da699d9f" loaded.
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler createApplication
+INFOS: Assembling app: /tmp/arquillian-tomee-app-working-dir/0/fba2a2ac-ccec-49cc-9146-ddf3da699d9f
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=DatabaseLocalBean) --> Ejb(deployment-id=Database)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/Database!fr.unice.polytech.isa.tcf.utils.Database) --> Ejb(deployment-id=Database)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/Database) --> Ejb(deployment-id=Database)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=CashierBeanLocal) --> Ejb(deployment-id=CashierBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/CashierBean!fr.unice.polytech.isa.tcf.Payment) --> Ejb(deployment-id=CashierBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/CashierBean) --> Ejb(deployment-id=CashierBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=CustomerRegistryBeanLocal) --> Ejb(deployment-id=CustomerRegistryBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/CustomerRegistryBean!fr.unice.polytech.isa.tcf.CustomerRegistration) --> Ejb(deployment-id=CustomerRegistryBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/CustomerRegistryBean!fr.unice.polytech.isa.tcf.CustomerFinder) --> Ejb(deployment-id=CustomerRegistryBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/CustomerRegistryBean) --> Ejb(deployment-id=CustomerRegistryBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=CatalogueBeanLocal) --> Ejb(deployment-id=CatalogueBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/CatalogueBean!fr.unice.polytech.isa.tcf.CatalogueExploration) --> Ejb(deployment-id=CatalogueBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/CatalogueBean) --> Ejb(deployment-id=CatalogueBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=KitchenBeanLocal) --> Ejb(deployment-id=KitchenBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/KitchenBean!fr.unice.polytech.isa.tcf.OrderProcessing) --> Ejb(deployment-id=KitchenBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/KitchenBean!fr.unice.polytech.isa.tcf.Tracker) --> Ejb(deployment-id=KitchenBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/KitchenBean) --> Ejb(deployment-id=KitchenBean)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=cart-statelessLocalBean) --> Ejb(deployment-id=cart-stateless)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/cart-stateless!fr.unice.polytech.isa.tcf.components.carts.CartStatelessBean) --> Ejb(deployment-id=cart-stateless)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=cart-statelessLocal) --> Ejb(deployment-id=cart-stateless)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/cart-stateless!fr.unice.polytech.isa.tcf.CartModifier) --> Ejb(deployment-id=cart-stateless)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/cart-stateless) --> Ejb(deployment-id=cart-stateless)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=cart-statefulLocalBean) --> Ejb(deployment-id=cart-stateful)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/cart-stateful!fr.unice.polytech.isa.tcf.components.carts.CartStatefulBean) --> Ejb(deployment-id=cart-stateful)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=cart-statefulLocal) --> Ejb(deployment-id=cart-stateful)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/cart-stateful!fr.unice.polytech.isa.tcf.CartModifier) --> Ejb(deployment-id=cart-stateful)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFOS: Jndi(name=global/fba2a2ac-ccec-49cc-9146-ddf3da699d9f/cart-stateful) --> Ejb(deployment-id=cart-stateful)
+mars 17, 2016 6:58:47 PM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFOS: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@5afa3c9
+mars 17, 2016 6:58:47 PM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFOS: OpenWebBeans Container is starting...
+mars 17, 2016 6:58:47 PM org.apache.webbeans.plugins.PluginLoader startUp
+INFOS: Adding OpenWebBeansPlugin : [CdiPlugin]
+mars 17, 2016 6:58:47 PM org.apache.webbeans.plugins.PluginLoader startUp
+INFOS: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+mars 17, 2016 6:58:47 PM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFOS: All injection points were validated successfully.
+mars 17, 2016 6:58:47 PM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFOS: OpenWebBeans Container has started, it took 157 ms.
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=CustomerRegistryBean, ejb-name=CustomerRegistryBean, container=Default Stateless Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=CatalogueBean, ejb-name=CatalogueBean, container=Default Stateless Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=KitchenBean, ejb-name=KitchenBean, container=Default Stateless Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=CashierBean, ejb-name=CashierBean, container=Default Stateless Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=cart-stateful, ejb-name=cart-stateful, container=Default Stateful Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=cart-stateless, ejb-name=cart-stateless, container=Default Stateless Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Created Ejb(deployment-id=Database, ejb-name=Database, container=Default Singleton Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=CustomerRegistryBean, ejb-name=CustomerRegistryBean, container=Default Stateless Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=CatalogueBean, ejb-name=CatalogueBean, container=Default Stateless Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=KitchenBean, ejb-name=KitchenBean, container=Default Stateless Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=CashierBean, ejb-name=CashierBean, container=Default Stateless Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=cart-stateful, ejb-name=cart-stateful, container=Default Stateful Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=cart-stateless, ejb-name=cart-stateless, container=Default Stateless Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFOS: Started Ejb(deployment-id=Database, ejb-name=Database, container=Default Singleton Container)
+mars 17, 2016 6:58:47 PM org.apache.openejb.assembler.classic.Assembler createApplication
+INFOS: Deployed Application(path=/tmp/arquillian-tomee-app-working-dir/0/fba2a2ac-ccec-49cc-9146-ddf3da699d9f)
+mars 17, 2016 6:58:48 PM org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+AVERTISSEMENT: Interceptor for {http://localhost:9090}WebClient has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:263)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:851)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:791)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:752)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:368)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:394)
+	at fr.unice.polytech.isa.tcf.utils.BankAPI.performPayment(BankAPI.java:30)
+	at fr.unice.polytech.isa.tcf.components.CashierBean.payOrder(CashierBean.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:192)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:173)
+	at org.apache.openejb.monitoring.StatsInterceptor.record(StatsInterceptor.java:181)
+	at org.apache.openejb.monitoring.StatsInterceptor.invoke(StatsInterceptor.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext$Invocation.invoke(ReflectionInvocationContext.java:192)
+	at org.apache.openejb.core.interceptor.ReflectionInvocationContext.proceed(ReflectionInvocationContext.java:173)
+	at org.apache.openejb.core.interceptor.InterceptorStack.invoke(InterceptorStack.java:85)
+	at org.apache.openejb.core.stateless.StatelessContainer._invoke(StatelessContainer.java:227)
+	at org.apache.openejb.core.stateless.StatelessContainer.invoke(StatelessContainer.java:194)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler.synchronizedBusinessMethod(EjbObjectProxyHandler.java:308)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler.businessMethod(EjbObjectProxyHandler.java:303)
+	at org.apache.openejb.core.ivm.EjbObjectProxyHandler._invoke(EjbObjectProxyHandler.java:92)
+	at org.apache.openejb.core.ivm.BaseEjbProxyHandler.invoke(BaseEjbProxyHandler.java:321)
+	at com.sun.proxy.$Proxy83.payOrder(Unknown Source)
+	at integration.PaymentIntegrationTest.integrationBetweenCustomersAndOrders(PaymentIntegrationTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.jboss.arquillian.junit.Arquillian$6$1.invoke(Arquillian.java:301)
+	at org.jboss.arquillian.container.test.impl.execution.LocalTestExecuter.execute(LocalTestExecuter.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:145)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:116)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.test.impl.client.protocol.local.LocalContainerMethodExecutor.invoke(LocalContainerMethodExecutor.java:50)
+	at org.jboss.arquillian.container.test.impl.execution.RemoteTestExecuter.execute(RemoteTestExecuter.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:145)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:116)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.test.impl.execution.ClientTestExecuter.execute(ClientTestExecuter.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.createContext(ContainerEventController.java:142)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.createTestContext(ContainerEventController.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.apache.openejb.arquillian.common.TestObserver.observes(TestObserver.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:145)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.test(EventTestRunnerAdaptor.java:111)
+	at org.jboss.arquillian.junit.Arquillian$6.evaluate(Arquillian.java:294)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.jboss.arquillian.junit.Arquillian$5.evaluate(Arquillian.java:267)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:193)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:345)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:49)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:207)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:155)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.net.ConnectException: ConnectException invoking http://localhost:9090/mailbox: Connexion refusée
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1474)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1459)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:660)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	... 131 more
+Caused by: java.net.ConnectException: Connexion refusée
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1403)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1347)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1431)
+	... 134 more
+
+]]></system-err>
+  </testcase>
+</testsuite>

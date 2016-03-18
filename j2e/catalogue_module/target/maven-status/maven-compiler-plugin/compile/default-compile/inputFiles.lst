@@ -1,0 +1,8 @@
+/home/user/Documents/Cours/DevOps/DEVOPS-NAJASB/j2e/catalogue_module/src/main/java/fr/unice/polytech/isa/tcf/exceptions/PaymentException.java
+/home/user/Documents/Cours/DevOps/DEVOPS-NAJASB/j2e/catalogue_module/src/main/java/fr/unice/polytech/isa/tcf/exceptions/ExternalPartnerException.java
+/home/user/Documents/Cours/DevOps/DEVOPS-NAJASB/j2e/catalogue_module/src/main/java/fr/unice/polytech/isa/tcf/exceptions/AlreadyExistingCustomerException.java
+/home/user/Documents/Cours/DevOps/DEVOPS-NAJASB/j2e/catalogue_module/src/main/java/fr/unice/polytech/isa/tcf/exceptions/UnknownCustomerException.java
+/home/user/Documents/Cours/DevOps/DEVOPS-NAJASB/j2e/catalogue_module/src/main/java/fr/unice/polytech/isa/tcf/CatalogueExploration.java
+/home/user/Documents/Cours/DevOps/DEVOPS-NAJASB/j2e/catalogue_module/src/main/java/fr/unice/polytech/isa/tcf/entities/Cookies.java
+/home/user/Documents/Cours/DevOps/DEVOPS-NAJASB/j2e/catalogue_module/src/main/java/fr/unice/polytech/isa/tcf/components/CatalogueBean.java
+/home/user/Documents/Cours/DevOps/DEVOPS-NAJASB/j2e/catalogue_module/src/main/java/fr/unice/polytech/isa/tcf/exceptions/UnknownOrderId.java
