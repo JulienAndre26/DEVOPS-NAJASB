@@ -5,12 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>cc-module</artifactId>
     <groupId>fr.unice.polytech.isa</groupId>
+	<version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-	 <parent>
+	<parent>
 		<groupId>fr.unice.polytech.isa</groupId>
 		<artifactId>tcf-backend</artifactId>
 		<version>1.0-SNAPSHOT</version>
-	  </parent>
+	</parent>
     <dependencies>
         <dependency>
             <artifactId>bank-module</artifactId>
@@ -22,6 +23,7 @@
             <groupId>fr.unice.polytech.isa</groupId>
             <artifactId>kitchen-module</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <type>war</type>
         </dependency>
     </dependencies>
 </project>

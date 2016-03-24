@@ -8,12 +8,14 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>ISA :: The Cookie Factory :: J2E Backend</name>
-
+	<modules>
+		<module>bank_module</module>
+		<module>kitchen_module</module>
+	</modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <versions.tomee.embedded>1.7.3</versions.tomee.embedded>
     </properties>
-
     <profiles>
         <profile>
             <!-- Use 'mvn -P stable' to activate stable dependencies (by default) -->
