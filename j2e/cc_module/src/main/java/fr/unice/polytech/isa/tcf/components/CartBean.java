@@ -1,7 +1,7 @@
-package main.java.fr.unice.polytech.isa.tcf.components;
+package fr.unice.polytech.isa.tcf.components;
 
 
-import main.java.fr.unice.polytech.isa.tcf.CartModifier;
+import fr.unice.polytech.isa.tcf.CartModifier;
 import fr.unice.polytech.isa.tcf.Payment;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.entities.Item;

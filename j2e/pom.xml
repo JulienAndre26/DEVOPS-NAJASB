@@ -9,8 +9,14 @@
     <version>1.0-SNAPSHOT</version>
     <name>ISA :: The Cookie Factory :: J2E Backend</name>
 	<modules>
+		<module>entities</module>
 		<module>bank_module</module>
 		<module>kitchen_module</module>
+		<module>catalogue_module</module>
+		<module>cc_module</module>
+		<module>webservice_module</module>
+		<module>interface_bank_module</module>
+		<module>interface_client_module</module>
 	</modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
