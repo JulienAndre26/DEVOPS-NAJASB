@@ -5,7 +5,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>kitchen-module</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<groupId>fr.unice.polytech.isa</groupId>
 	<packaging>war</packaging>
 	 <parent>
 		<groupId>fr.unice.polytech.isa</groupId>
