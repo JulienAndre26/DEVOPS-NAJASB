@@ -183,4 +183,13 @@
             </plugin>
         </plugins>
     </build>
+
+	<!-- deploy thing -->
+	<distributionManagement>
+		<snapshotRepository>
+		    <id>snapshots</id>
+		    <name>erebe-vm23-snapshots</name>
+		    <url>http://erebe-vm23.i3s.unice.fr/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
