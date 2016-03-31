@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>cc-module</artifactId>
 	<version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 	<parent>
 		<groupId>fr.unice.polytech.isa</groupId>
 		<artifactId>tcf-backend</artifactId>
@@ -31,17 +31,6 @@
         </dependency>
     </dependencies>
     <build>
-		<plugins>
-			<plugin>
-				<inherited>true</inherited>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<version>2.7</version>
-                <configuration>
-				  <updateReleaseInfo>true</updateReleaseInfo>
-				  <attachClasses>true</attachClasses>
-				  <archiveClasses>true</archiveClasses>
-				</configuration>
-			  </plugin>
-		</plugins>
+        <finalName>cc-module</finalName>
 	</build>
 </project>
