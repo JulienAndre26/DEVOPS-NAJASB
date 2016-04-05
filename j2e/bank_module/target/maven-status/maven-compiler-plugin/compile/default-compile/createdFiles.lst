@@ -1,0 +1,6 @@
+fr\unice\polytech\isa\tcf\Payment.class
+fr\unice\polytech\isa\tcf\utils\Database.class
+fr\unice\polytech\isa\tcf\interceptors\ItemVerifier.class
+fr\unice\polytech\isa\tcf\interceptors\Logger.class
+fr\unice\polytech\isa\tcf\utils\BankAPI.class
+fr\unice\polytech\isa\tcf\interceptors\CartCounter.class
