@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="catalogue-module:war">
+    <output-path>$PROJECT_DIR$/j2e/catalogue_module/target</output-path>
+    <root id="archive" name="catalogue-module.war">
+      <element id="artifact" artifact-name="catalogue-module:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/j2e/bank_module/bank-module.iml" filepath="$PROJECT_DIR$/j2e/bank_module/bank-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j2e/catalogue_module/catalogue-module.iml" filepath="$PROJECT_DIR$/j2e/catalogue_module/catalogue-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j2e/cc_module/cc-module.iml" filepath="$PROJECT_DIR$/j2e/cc_module/cc-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j2e/entities/entities-module.iml" filepath="$PROJECT_DIR$/j2e/entities/entities-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j2e/interface_bank_module/interface-bank-module.iml" filepath="$PROJECT_DIR$/j2e/interface_bank_module/interface-bank-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j2e/interface_client_module/interface-client-module.iml" filepath="$PROJECT_DIR$/j2e/interface_client_module/interface-client-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j2e/kitchen_module/kitchen-module.iml" filepath="$PROJECT_DIR$/j2e/kitchen_module/kitchen-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j2e/tcf-backend.iml" filepath="$PROJECT_DIR$/j2e/tcf-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/tcf-client.iml" filepath="$PROJECT_DIR$/client/tcf-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j2e/webservice_module/webservice-module.iml" filepath="$PROJECT_DIR$/j2e/webservice_module/webservice-module.iml" />
+    </modules>
+  </component>
+</project>

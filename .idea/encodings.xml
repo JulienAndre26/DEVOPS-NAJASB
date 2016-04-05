@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/j2e" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/j2e/bank_module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/j2e/catalogue_module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/j2e/cc_module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/j2e/entities" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/j2e/interface_bank_module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/j2e/interface_client_module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/j2e/kitchen_module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/j2e/webservice_module" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
