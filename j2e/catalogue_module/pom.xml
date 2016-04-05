@@ -22,4 +22,7 @@
 				<version>1.0-SNAPSHOT</version>
 		  </dependency>
       </dependencies>
+	<build>
+		<finalName>catalogue-module</finalName>
+	</build>
 </project>
