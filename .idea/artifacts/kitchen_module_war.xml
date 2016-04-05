@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="kitchen-module:war">
-    <output-path>$PROJECT_DIR$/j2e/kitchen_module/target</output-path>
-    <root id="archive" name="kitchen-module.war">
-      <element id="artifact" artifact-name="kitchen-module:war exploded" />
-    </root>
-  </artifact>
-</component>

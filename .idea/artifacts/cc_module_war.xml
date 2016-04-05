@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="cc-module:war">
-    <output-path>$PROJECT_DIR$/j2e/cc_module/target</output-path>
-    <root id="archive" name="cc-module.war">
-      <element id="artifact" artifact-name="cc-module:war exploded" />
-    </root>
-  </artifact>
-</component>

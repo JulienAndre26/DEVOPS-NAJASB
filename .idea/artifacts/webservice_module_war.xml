@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="webservice-module:war">
-    <output-path>$PROJECT_DIR$/j2e/webservice_module/target</output-path>
-    <root id="archive" name="webservice-module.war">
-      <element id="artifact" artifact-name="webservice-module:war exploded" />
-    </root>
-  </artifact>
-</component>
