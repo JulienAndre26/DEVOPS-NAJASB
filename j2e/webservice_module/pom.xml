@@ -9,12 +9,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <versions.tomee.embedded>1.7.3</versions.tomee.embedded>
     </properties>
-
     <parent>
         <groupId>fr.unice.polytech.isa</groupId>
         <artifactId>tcf-backend</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <repositories>
+        <repository>
+		    <id>snapshots</id>
+		    <name>erebe-vm23-snapshots</name>
+		    <url>http://erebe-vm23.i3s.unice.fr/artifactory/libs-snapshot</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>fr.unice.polytech.isa</groupId>
