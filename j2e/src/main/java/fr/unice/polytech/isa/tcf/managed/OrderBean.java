@@ -29,7 +29,7 @@ public class OrderBean implements Serializable {
 	 ***************************/
 
 	@EJB private CustomerFinder finder;
-	@EJB(name = "cart-stateless") private CartModifier cartManager;
+	@EJB private CartModifier cartManager;
 	@EJB private CatalogueExploration catalogue;
 
 	/****************************

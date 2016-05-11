@@ -24,9 +24,7 @@ public abstract class CartBean implements CartModifier {
 	public String validate(Customer c) throws PaymentException, EmptyCartException {
 		if(contents(c).isEmpty())
 			throw new EmptyCartException(c.getName());
-		String id = cashier.payOrder(c, contents(c));
-		contents(c).clear();
-		return id;
+		return cashier.payOrder(c, contents(c));
 	}
 
 	@Override

@@ -39,8 +39,7 @@ public class Order implements Serializable {
 
 	public Order(Customer customer, Set<Item> items) {
 		this.customer = customer;
-		this.items = new HashSet<Item>();
-		this.items.addAll(items);
+		this.items = items;
 		this.setStatus(OrderStatus.IN_PROGRESS);
 	}
 
@@ -81,15 +80,5 @@ public class Order implements Serializable {
 		result = 31 * result + (getItems() != null ? getItems().hashCode() : 0);
 		result = 31 * result + (getStatus() != null ? getStatus().hashCode() : 0);
 		return result;
-	}
-
-	@Override
-	public String toString() {
-		return "Order{" +
-				"id=" + id +
-				", customer=" + customer +
-				", items=" + items +
-				", status=" + status +
-				'}';
 	}
 }

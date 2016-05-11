@@ -8,6 +8,7 @@
   * Prev.: [Making things persistent](https://github.com/polytechnice-si/4A_ISA_TheCookieFactory/blob/develop/chapters/Persistence.md)
 
 
+
 ## Configuring the JSF framework
 
 ### Loading the framework
@@ -326,7 +327,6 @@ public void setCustomer(Customer customer) { this.customer = customer; }
 private void loadCustomer() { this.customer = finder.findByName(getCustomerName()).get(); }
 ```
 
-  * Next: [Asynchronous communication using Messages](https://github.com/polytechnice-si/4A_ISA_TheCookieFactory/blob/develop/chapters/MessageDrivenBeans.md)
- 
+  * Next: [Conclusions](https://github.com/polytechnice-si/4A_ISA_TheCookieFactory/blob/develop/chapters/Conclusions.md)
 
 

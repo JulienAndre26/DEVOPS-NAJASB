@@ -47,7 +47,9 @@ public class CashierBean implements Payment {
 		}
 
 		customer.add(order);
+		customer.getCart().clear();
 		entityManager.persist(order);
+
 		kitchen.process(order);
 		return ""+order.getId();
 	}

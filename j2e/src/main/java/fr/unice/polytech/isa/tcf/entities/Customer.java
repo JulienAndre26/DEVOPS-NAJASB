@@ -78,13 +78,4 @@ public class Customer implements Serializable {
 		return getOrders() != null ? getOrders().equals(customer.getOrders()) : customer.getOrders() == null;
 
 	}
-
-	@Override
-	public String toString() {
-		return "Customer{" +
-				"id=" + id +
-				", name='" + name + '\'' +
-				", creditCard='" + creditCard + '\'' +
-				'}';
-	}
 }

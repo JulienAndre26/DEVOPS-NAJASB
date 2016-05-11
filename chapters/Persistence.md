@@ -13,7 +13,7 @@
 
 We will rely on the _Java Persistence API_ (JPA) to support relational database mappings. The version bundled in the OpenEJB stack is OpenJPA. JPA will enhance annotated classes to create _persistence-aware_ versions of these classes that will be used instead of the one we wrote. This step must be triggered during the compilation process. To introduce this step in the build chain, we simply ask Maven to do so, in the `pom.xml` file. With the following configuration, it will process all the classes in the `entities` package (see the `includes` tag):
 
-```xml
+```
 <plugin>
 	<groupId>org.apache.openjpa</groupId>
    <artifactId>openjpa-maven-plugin</artifactId>
@@ -237,14 +237,6 @@ When writing or when using the generated ones, be careful that your equals and h
 	}
 ```
 The previous code obviously triggers an infinite loops (this is the very same situation for the equals method). Be very careful when designing these methods, as the semantics of the operation must remain consistent while avoiding cyclic references. In this case, we simply break the cycle by calling `getCustomer().getName().hashcode()` instead of `getCustomer().hashCode()`.
-
-### Resulting database schema
-
-Based on these annotations, the JPA layer generates the following database schema.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/polytechnice-si/4A_ISA_TheCookieFactory/develop/docs/database.png" />
-</p>
 
 
 ## Testing the persistence layer
