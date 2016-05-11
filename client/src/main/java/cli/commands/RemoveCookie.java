@@ -14,7 +14,7 @@ public class RemoveCookie extends CartManagement {
 
 	@Override
 	public void execute() throws Exception {
-		shell.system.carts.removeItemToCustomerCart(customerName, item);
+		system.carts.removeItemToCustomerCart(customerName, item);
 	}
 
 	@Override

@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 public class CartCounter implements Serializable {
 
-	@EJB Database memory;
+	@EJB private Database memory;
 
 	@AroundInvoke
 	public Object intercept(InvocationContext ctx) throws Exception {

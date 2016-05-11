@@ -12,9 +12,9 @@ public abstract class Command<T> {
 	public void load(List<String> args) {  }          // default implementation
 
 
-	protected Shell<T> shell;
+	protected T system;
 
-	public void withShell(Shell<T> shell) { this.shell = shell;   }
+	public void withSystem(T system)                    { this.system = system;   }
 
 	public boolean process(List<String> args) throws Exception {
 		try { load(args); }

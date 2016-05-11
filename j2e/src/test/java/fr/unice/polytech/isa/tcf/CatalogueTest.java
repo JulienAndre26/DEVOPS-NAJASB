@@ -1,7 +1,6 @@
-package fr.unice.polytech.isa.tcf.business;
+package fr.unice.polytech.isa.tcf;
 
 import arquillian.AbstractTCFTest;
-import fr.unice.polytech.isa.tcf.CatalogueExploration;
 import fr.unice.polytech.isa.tcf.entities.Cookies;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Test;
@@ -15,7 +14,8 @@ import static org.junit.Assert.*;
 @RunWith(Arquillian.class)
 public class CatalogueTest extends AbstractTCFTest {
 
-	@EJB private CatalogueExploration catalogue;
+	@EJB
+	CatalogueExploration catalogue;
 
 	@Test
 	public void preMadeRecipesAreAVailable() {

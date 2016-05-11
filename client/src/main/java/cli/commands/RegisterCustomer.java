@@ -21,7 +21,7 @@ public class RegisterCustomer extends Command<TCFPublicAPI> {
 
 	@Override
 	public void execute() throws Exception {
-		shell.system.ccs.register(customerName, creditCardNumber);
+		system.ccs.register(customerName, creditCardNumber);
 	}
 
 	@Override

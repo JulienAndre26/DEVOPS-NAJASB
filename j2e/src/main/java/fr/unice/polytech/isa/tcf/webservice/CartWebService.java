@@ -1,7 +1,6 @@
 package fr.unice.polytech.isa.tcf.webservice;
 
 import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.exceptions.EmptyCartException;
 import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
 import fr.unice.polytech.isa.tcf.exceptions.UnknownCustomerException;
 import fr.unice.polytech.isa.tcf.interceptors.ItemVerifier;
@@ -36,6 +35,6 @@ public interface CartWebService {
 	@WebMethod
 	@WebResult(name = "order_id")
 	String validate(@WebParam(name = "customer_name") String customerName)
-			throws PaymentException, UnknownCustomerException, EmptyCartException;
+			throws PaymentException, UnknownCustomerException;
 
 }

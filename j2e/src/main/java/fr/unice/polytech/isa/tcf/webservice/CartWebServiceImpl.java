@@ -4,7 +4,6 @@ import fr.unice.polytech.isa.tcf.CartModifier;
 import fr.unice.polytech.isa.tcf.CustomerFinder;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.exceptions.EmptyCartException;
 import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
 import fr.unice.polytech.isa.tcf.exceptions.UnknownCustomerException;
 
@@ -41,7 +40,7 @@ public class CartWebServiceImpl implements CartWebService {
 
 	@Override
 	public String validate(String customerName)
-			throws PaymentException, EmptyCartException, UnknownCustomerException {
+			throws PaymentException, UnknownCustomerException {
 		return cart.validate(readCustomer(customerName));
 	}
 

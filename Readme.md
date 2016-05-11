@@ -15,12 +15,6 @@ This case study is used to illustrate the different technologies involved in the
 
 _The Cookie Factory_ (TCF) is a major bakery brand in the USA. The _Cookie on Demand_ (CoD) system is an innovative service offered by TCF to its customer. They can order cookies online thanks to an application, and select when they'll pick-up their order in a given shop. The CoD system ensures to TCF's happy customers that they'll always retrieve their pre-paid warm cookies on time.
 
-The software architecture to be developed in this document will rely on the following stack:
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/polytechnice-si/4A_ISA_TheCookieFactory/develop/docs/big_pict.png"/>
-</p>
-
 ## Chapters
 
   1. [Architecture](https://github.com/polytechnice-si/4A_ISA_TheCookieFactory/blob/develop/chapters/Architecture.md)
@@ -31,10 +25,9 @@ The software architecture to be developed in this document will rely on the foll
   6. [Complete architecture overview](https://github.com/polytechnice-si/4A_ISA_TheCookieFactory/blob/develop/chapters/VolatileOverview.md)
   7. [Message interceptors to support the NTUI (_Never Trust User Input_) golden rule](https://github.com/polytechnice-si/4A_ISA_TheCookieFactory/blob/develop/chapters/Interceptors.md)
   8. [Making things persistent](https://github.com/polytechnice-si/4A_ISA_TheCookieFactory/blob/develop/chapters/Persistence.md)
-  9. [Web user interface using JSF](https://github.com/polytechnice-si/4A_ISA_TheCookieFactory/blob/develop/chapters/UI_JSF.md) 
-  10. [Conclusions](https://github.com/polytechnice-si/4A_ISA_TheCookieFactory/blob/develop/chapters/Conclusions.md)
+  9. [Conclusions](https://github.com/polytechnice-si/4A_ISA_TheCookieFactory/blob/develop/chapters/Conclusions.md)
 
-__Important remark__: one can notice that the persistence layer (_aka_ the database) is almost the last step of this document. This is done on purpose. Databases are part of a given architecture, but must not be considered as the its essence. The essence of an architecture is the set of supported features, at the business level. Databases are in this context only a way (among others) to store data.
+__Important remark__: one can notice that the persistence layer (_aka_ the database) is the last step of this document. This is done on purpose. Databases are part of a given architecture, but must not be considered as the its essence. The essence of an architecture is the set of supported features, at the business level. Databases are in this context only a way (among others) to store data.
 
 ## How to use this repository
   
@@ -62,27 +55,3 @@ To run the demonstration, first start the two servers in two different terminals
     # Remote Client						(bye to stop)
     mosser@azrael $ cd client
     mosser@azrael client$ mvn exec:java
-
-## Code information
- 
-```bash
-azrael:4A_ISA_TheCookieFactory mosser$ cloc .
-     139 text files.
-     139 unique files.                                          
-      21 files ignored.
-
-http://cloc.sourceforge.net v 1.64  T=0.53 s (225.2 files/s, 11248.6 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Java                           100            970           1349           2911
-Maven                            1              7             10            188
-XML                              7             19              0            138
-C#                               4             37             13            132
-JavaServer Faces                 4             32              0            115
-Bourne Shell                     2              4              3             12
-JSP                              1              0              0              4
--------------------------------------------------------------------------------
-SUM:                           119           1069           1375           3500
--------------------------------------------------------------------------------
-```
