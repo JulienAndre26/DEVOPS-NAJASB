@@ -12,6 +12,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <versions.tomee.embedded>1.7.3</versions.tomee.embedded>
+        <versions.openjpa>2.4.1</versions.openjpa>
+        <versions.myface>2.2.10</versions.myface>
     </properties>
 
     <profiles>
@@ -28,8 +30,8 @@
             </properties>
         </profile>
         <profile>
-            <!-- Use 'mvn -P latest' to activate these dependencies -->
-            <id>latest</id>
+            <!-- Use 'mvn -P experimental' to activate these dependencies -->
+            <id>experimental</id>
             <properties>
                 <versions.javaee>7.0-SNAPSHOT</versions.javaee>
                 <versions.openejb>5.0.0-SNAPSHOT</versions.openejb>
@@ -37,7 +39,6 @@
             </properties>
         </profile>
     </profiles>
-
 
     <repositories>
         <!-- Snapshot repository to access to the latest version of the OpenEJB framework -->
@@ -84,6 +85,13 @@
             <artifactId>json</artifactId>
             <version>20160212</version>
         </dependency>
+        <!-- Dependencies for the JSF framework -->
+        <dependency>
+            <groupId>org.apache.myfaces.core</groupId>
+            <artifactId>myfaces-api</artifactId>
+            <version>${versions.myface}</version>
+            <scope>provided</scope>
+        </dependency>
         <!-- Dependencies for the testing frameworks (Junit, Mockito & Arquillian) -->
         <dependency>
             <groupId>junit</groupId>
@@ -124,6 +132,25 @@
         <finalName>tcf-backend</finalName>
         <defaultGoal>package</defaultGoal>
         <plugins>
+            <plugin>
+                <groupId>org.apache.openjpa</groupId>
+                <artifactId>openjpa-maven-plugin</artifactId>
+                <version>${versions.openjpa}</version>
+                <configuration>
+                    <includes>**/entities/*.class</includes>
+                    <addDefaultConstructor>true</addDefaultConstructor>
+                    <enforcePropertyRestrictions>true</enforcePropertyRestrictions>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>enhancer</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>enhance</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
